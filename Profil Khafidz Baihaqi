@@ -1,0 +1,244 @@
+<?php
+$name = "Khafidz Baihaqi";
+$role = "IT Support | Network Technician";
+$description = "Saya merupakan seseorang yang memiliki ketertarikan di bidang teknologi informasi, jaringan komputer, dan pengembangan website.";
+?>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - <?php echo $name; ?></title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    line-height: 1.7;
+}
+
+header {
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111c30;
+}
+
+header h2 {
+    color: #38bdf8;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.profile {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #38bdf8;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.hero h3 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 550px;
+    color: #cbd5e1;
+}
+
+section {
+    padding: 65px 8%;
+}
+
+section h2 {
+    text-align: center;
+    color: #38bdf8;
+    margin-bottom: 30px;
+}
+
+.skills, .projects {
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #334155;
+}
+
+.card h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #cbd5e1;
+}
+
+.contact {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111c30;
+    color: #94a3b8;
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>KB.</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+
+    <img src="Khafidz.jpeg"
+         alt="Foto Khafidz Baihaqi"
+         class="profile">
+
+    <h1><?php echo $name; ?></h1>
+
+    <h3><?php echo $role; ?></h3>
+
+    <p><?php echo $description; ?></p>
+
+</div>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+        Saya memiliki latar belakang pendidikan
+        Teknik Komputer dan Jaringan (TKJ).
+        Saya tertarik mempelajari teknologi,
+        instalasi jaringan, konfigurasi router,
+        troubleshooting komputer, dan server Linux.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+
+    <div class="skills">
+        <div class="card">
+            <h3>Networking</h3>
+            <p>LAN, WAN, dan konfigurasi jaringan.</p>
+        </div>
+
+        <div class="card">
+            <h3>MikroTik</h3>
+            <p>Dasar konfigurasi router dan IP Address.</p>
+        </div>
+
+        <div class="card">
+            <h3>Linux Debian</h3>
+            <p>Pengelolaan server dan Apache.</p>
+        </div>
+
+        <div class="card">
+            <h3>Computer Hardware</h3>
+            <p>Perakitan dan troubleshooting komputer.</p>
+        </div>
+
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>Dasar HTML, CSS, dan PHP.</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects">
+        <div class="card">
+            <h3>Network Configuration</h3>
+            <p>Konfigurasi jaringan komputer.</p>
+        </div>
+
+        <div class="card">
+            <h3>Linux Server</h3>
+            <p>Instalasi Debian dan Apache Web Server.</p>
+        </div>
+
+        <div class="card">
+            <h3>Personal Website</h3>
+            <p>Membangun website menggunakan PHP.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact Me</h2>
+    <p>Terima kasih telah mengunjungi portofolio saya.</p>
+</section>
+
+<footer>
+    <p>© 2026 Khafidz Baihaqi</p>
+</footer>
+
+</body>
+</html>
